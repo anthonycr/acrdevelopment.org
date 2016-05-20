@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta content="en-us" http-equiv="Content-Language" />
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" href="../images/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="../images/favicon-16x16.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="../images/favicon-20x20.png" sizes="20x20">
+		<title>Lorem Ipsum</title>
+	</head>
+	<style>
+		body {
+		background: #00bfff;
+		font-family:Arial, Helvetica, 'sans-serif';
+		max-width:100%;
+		min-height:100%;
+		}
+		#header { 
+		background:#444444;
+		height:70px;
+		width:100%;
+		text-align:center;
+		position:fixed;
+		display:inline-table;
+		margin:0 auto;
+		left:0px;
+		top:0px;
+		box-shadow: 0px 5px 10px rgba( 0, 0, 0, 0.25 );
+		}
+		#header-content {
+		text-align:center;
+		vertical-align:middle;
+		width:100%;
+		height:70px;
+		display:table-cell;
+		font-family:Arial, Helvetica, 'sans-serif';
+		}
+		#title {
+		padding-top:70px;
+		width:100%;
+		text-align:center;
+		max-width:800px;
+		margin:0 auto;
+		}
+    #footer {
+			background:#444444;
+			height:40px;
+			width:100%;
+			text-align:center;
+			position:fixed;
+			display:inline-table;
+			margin:0 auto;
+			left:0;
+			bottom:0;
+			box-shadow: 0px -5px 10px rgba( 0, 0, 0, 0.25 );
+    }
+			#footer-content {
+				font-size:medium;
+				font-weight:bold;
+				text-align:center;
+				vertical-align:middle;
+				width:100%;
+				height:40px;
+				display:table-cell;
+				font-family:Arial;
+			}
+		#content {
+		width:100%;
+    height:100%;
+    min-height:100%;
+    position:relative;
+		max-width:800px;
+		margin:0 auto;
+		text-align:center;
+    padding-top:70px;
+    padding-bottom:50px;
+		}
+		#center-text {
+		text-align:center;
+		width:100%;
+		}
+		.box {
+		vertical-align:middle;
+		position:relative;
+		display: inline-block;
+		margin: 10px;
+    padding:10px;
+		background-color:#fff;
+		box-shadow: 0px 5px 10px rgba( 0, 0, 0, 0.25 );
+    transition: all 0.25s linear;
+		font-family: Arial, Helvetica, 'sans-serif';
+		color: #444;
+		font-size: large;
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
+		border-radius: 4px;
+		}
+    .box:hover{
+    box-shadow: 0px 5px 20px rgba( 0, 0, 0, 0.75 );
+    transition: all 0.25s linear;
+    }
+		.box-wrap {
+		vertical-align:middle;
+		text-align:center;
+		position:relative;
+		display: inline-block;
+		margin: 10px;
+		padding:10px;
+		background-color:#fff;
+		box-shadow: 0px 5px 10px rgba( 0, 0, 0, 0.25 );
+		font-family: Arial, Helvetica, 'sans-serif';
+		color: #444;
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
+		border-radius: 2px;
+		}
+		.box-wrap a {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		}
+		.box-white {
+		vertical-align:middle;
+		position:relative;
+		display: block;
+		margin: 10px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:5px;
+		padding-bottom:5px;
+		background-color:#fff;
+		box-shadow: 0px 5px 10px rgba( 0, 0, 0, 0.25 );
+		font-family: Arial, Helvetica, 'sans-serif';
+		color: #000;
+		font-size:large;
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
+		border-radius: 4px;
+		}
+		img.left 
+		{
+		float:left;
+		border:none;
+		margin:0px 10px 0px 0px;
+		}
+		.stuff {
+		height: 100px;
+		width: 100px;
+		vertical-align:middle;
+		text-align:center;
+		display: table-cell;
+		}
+		p.ellipses {
+		width:90px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-align:center;
+		margin:auto;
+		text-overflow: ellipsis;
+		-o-text-overflow: ellipsis;
+		-ms-text-overflow: ellipsis;
+		}
+		p.large {
+		text-align:middle;
+		font-size:x-large;
+		}
+		p.left {
+		font-size:large;
+		text-align:left;
+		}
+		.box a {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		}
+		ul
+		{
+		list-style-type: none;
+		}
+		p.gray
+		{
+      color:gray;
+      font-size:small;
+		}
+    p.white
+    {
+      color:white;
+      font-size:small;
+    }
+    .bottom
+    {
+      margin-top:20px;
+    }
+    p.title
+    {
+      color:white;
+      margin:20px;
+      font-size:xx-large;
+    }
+	</style>
+	<body>
+		
+		<div id="content">
+			<div class="box-white">
+          <p class="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed venenatis diam. Sed nec consectetur dui. Aliquam facilisis facilisis massa id sodales. Vivamus vitae dolor aliquet, commodo arcu et, dignissim diam. In hac habitasse platea dictumst. Phasellus volutpat rutrum neque. Cras vel enim urna. Curabitur sit amet diam quis lorem interdum ornare sed ut dui. Cras at ex imperdiet, aliquet nunc et, placerat risus. Pellentesque et ipsum ex. Aliquam consequat lacinia erat, sed cursus turpis convallis a. Fusce congue arcu interdum arcu molestie, non aliquam massa mollis. Phasellus eu scelerisque justo, id fringilla felis.
+          </p><p class="left">
+          Mauris non sem a risus efficitur pretium quis in odio. Nunc sagittis ante nec nunc varius elementum. In hac habitasse platea dictumst. In mattis mattis justo, quis vehicula sapien ultricies eu. Donec suscipit magna nunc, non tincidunt risus sollicitudin a. Aliquam pretium malesuada elementum. Nunc venenatis lacus id luctus varius. Aliquam posuere volutpat tellus id ornare. Nulla in turpis odio. In ut metus pulvinar, dignissim dolor non, volutpat eros.
+          </p><p class="left">
+          Phasellus eget gravida sapien, at luctus metus. Vestibulum fermentum massa eu ligula sollicitudin, et viverra risus pellentesque. Nunc ultrices risus at quam mollis cursus. Phasellus nec ultricies nulla, id tempor libero. In hac habitasse platea dictumst. Mauris sed dui tristique, venenatis lorem in, tincidunt nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed gravida felis. Integer augue magna, aliquam ac condimentum eu, bibendum at erat. Phasellus mollis vel lorem et pretium. Proin tempus lacus sed tellus feugiat, ac sollicitudin nibh placerat. Sed hendrerit enim et rutrum accumsan. Sed in erat accumsan, lacinia enim interdum, ullamcorper ipsum. Integer sed laoreet enim. Nullam sed mauris sed felis hendrerit imperdiet. Suspendisse auctor viverra magna, vitae luctus orci euismod suscipit.
+          </p><p class="left">
+          Duis rutrum condimentum elementum. Integer rutrum eu nunc sed aliquet. Phasellus ornare augue vel libero tempor, at laoreet magna hendrerit. Duis ultrices tincidunt sem, eget molestie nibh. Praesent aliquet tortor ac consectetur dignissim. Donec elit mauris, eleifend in ligula tincidunt, condimentum facilisis metus. Curabitur vel euismod lectus. Sed fringilla leo eu nunc consequat placerat. Suspendisse pulvinar consequat porttitor. Nulla facilisi. Donec ultrices laoreet fringilla. Donec eleifend cursus lectus non bibendum. Fusce interdum, magna eget pharetra suscipit, sem nulla mattis nibh, vitae dapibus nisi magna ut lacus. Maecenas faucibus metus vel sapien gravida, pellentesque eleifend est convallis.
+          </p><p class="left">
+          Proin tincidunt tortor mauris, ac tincidunt augue vehicula et. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas eu quam imperdiet, ullamcorper neque in, aliquam diam. Integer ornare et diam eget porta. Quisque feugiat augue ante, eu pharetra metus iaculis vitae. Sed pellentesque, lacus ut aliquet hendrerit, elit lorem condimentum nibh, vel consequat nisi ex ac dui. Donec at luctus lorem. Pellentesque ullamcorper neque tortor, eget cursus elit sagittis vitae. Donec ac sem et felis lobortis hendrerit. Quisque eget ultricies neque. Etiam mollis purus et aliquet aliquam. Quisque vel ullamcorper nunc. Curabitur eget nisl lacus.
+				</p>
+			</div>
+      <div class="bottom" >
+      
+      <p class="white" >
+        Anthony C. Restaino &copy 
+        <!-- This javascript keeps the copyright year current -->
+        <script type="text/javascript">
+          document.write(new Date().getFullYear());
+        </script>
+      </p>
+      </div>
+      </div>
+      <div id="header">
+			<div id="header-content">
+				<img height="60" width="150" src='../images/logo.png' alt="ACR Development" title="ACR Development"></img>
+			</div>
+		</div>
+      <div id="footer">
+        <div id="footer-content"> 
+          <p class="white" >
+            <a style="color: #000000; text-decoration: none;" href="http://stackoverflow.com/users/1499541/a-c-r-development" rel="publisher">
+              <img width="20" height="20" style="margin-left:10px;margin-right:10px;" src="../images/stack.png" />
+            </a>
+            <a style="color: #000000; text-decoration: none;" href="https://github.com/anthonycr" rel="publisher">
+              <img width="20" height="20" style="margin-left:10px;margin-right:10px;" src="../images/github.png" />
+            </a>
+            <a style="color: #000000; text-decoration: none;" href="https://plus.google.com/+AnthonyRestaino" >
+              <img width="20" height="20" style="margin-left:10px;margin-right:10px;" src="../images/plus.png" />
+            </a>
+            <a style="color: #000000; text-decoration: none;" href="https://twitter.com/RestainoAnthony" rel="publisher">
+              <img width="20" height="20" style="margin-left:10px;margin-right:10px;" src="../images/twitter.png" />
+            </a>
+            <a style="color: #000000; text-decoration: none;" href="mailto:anthonyrestaino11@gmail.com" rel="publisher">
+              <img width="20" height="20" style="margin-left:10px;margin-right:10px;" src="../images/mail.png" />
+            </a>
+            <a style="color: #000000; text-decoration: none;" href="../search" rel="publisher">
+              <img width="20" height="20" style="margin-left:10px;margin-right:10px;" src="../images/search.png" />
+            </a>
+            <br>
+          </p>
+        </div>
+      </div>
+    </div>
+	</body>
+</html>
