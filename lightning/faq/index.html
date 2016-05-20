@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta content="en-us" http-equiv="Content-Language" />
+    <meta name="theme-color" content="#00bfff" />
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#00bfff">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#00bfff">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#00bfff">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../images/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../../images/favicon-32x32.png" sizes="32x32">
+    <title>Lightning FAQ</title>
+</head>
+<style>
+    body {
+        background: #00bfff;
+        font-family: Arial, Helvetica, 'sans-serif';
+        max-width: 100%;
+        min-height: 100%;
+    }
+    
+    #header {
+        background: #444444;
+        height: 70px;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        display: inline-table;
+        margin: 0 auto;
+        left: 0px;
+        top: 0px;
+        box-shadow: 0px 2px 5px rgba( 0, 0, 0, 0.25);
+    }
+    
+    #header-content {
+        text-align: center;
+        vertical-align: middle;
+        width: 100%;
+        height: 70px;
+        display: table-cell;
+        font-family: Arial, Helvetica, 'sans-serif';
+    }
+    
+    #title {
+        padding-top: 70px;
+        width: 100%;
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    #footer {
+        background: #444444;
+        height: 40px;
+        width: 100%;
+        text-align: center;
+        position: fixed;
+        display: inline-table;
+        margin: 0 auto;
+        left: 0;
+        bottom: 0;
+        box-shadow: 0px -3px 3px rgba( 0, 0, 0, 0.25);
+    }
+    
+    #footer-content {
+        font-size: medium;
+        font-weight: bold;
+        text-align: center;
+        vertical-align: middle;
+        width: 100%;
+        height: 40px;
+        display: table-cell;
+        font-family: Arial;
+    }
+    
+    #content {
+        width: 100%;
+        height: 100%;
+        min-height: 100%;
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+    
+    #center-text {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .box {
+        vertical-align: middle;
+        position: relative;
+        display: inline-block;
+        margin: 10px;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 0px 2px 5px rgba( 0, 0, 0, 0.25);
+        transition: all 0.25s linear;
+        font-family: Arial, Helvetica, 'sans-serif';
+        color: #444;
+        font-size: large;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border-radius: 4px;
+    }
+    
+    .box:hover {
+        box-shadow: 0px 2px 10px rgba( 0, 0, 0, 0.75);
+        transition: all 0.25s linear;
+    }
+    
+    .box-wrap {
+        vertical-align: middle;
+        text-align: center;
+        position: relative;
+        display: inline-block;
+        margin: 10px;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 0px 2px 5px rgba( 0, 0, 0, 0.25);
+        font-family: Arial, Helvetica, 'sans-serif';
+        color: #444;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+    }
+    
+    .box-wrap a {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    .box-white {
+        vertical-align: middle;
+        position: relative;
+        display: block;
+        margin: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: #fff;
+        box-shadow: 0px 2px 5px rgba( 0, 0, 0, 0.25);
+        font-family: Arial, Helvetica, 'sans-serif';
+        color: #000;
+        font-size: large;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border-radius: 4px;
+    }
+    
+    img.left {
+        float: left;
+        border: none;
+        margin: 0px 10px 0px 0px;
+    }
+    
+    .stuff {
+        height: 100px;
+        width: 100px;
+        vertical-align: middle;
+        text-align: center;
+        display: table-cell;
+    }
+    
+    p.ellipses {
+        width: 90px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-align: center;
+        margin: auto;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        -ms-text-overflow: ellipsis;
+    }
+    
+    p.large {
+        text-align: middle;
+        font-size: x-large;
+    }
+    
+    p.left {
+        font-size: large;
+        text-align: left;
+    }
+    
+    p.left-text {
+        font-size: medium;
+        text-align: left;
+        margin-left: 20px;
+    }
+    
+    .box a {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    ul {
+        list-style-type: none;
+    }
+    
+    p.gray {
+        color: gray;
+        font-size: small;
+    }
+    
+    p.white {
+        color: white;
+        font-size: small;
+    }
+    
+    .bottom {
+        margin-top: 20px;
+    }
+    
+    p.title {
+        color: white;
+        margin: 20px;
+        font-size: xx-large;
+    }
+    
+    a:link {
+        color: #FF0000;
+    }
+    
+    a:visited {
+        color: #FF0000;
+    }
+
+</style>
+
+<body>
+    <div id="header">
+        <div id="header-content">
+            <img height="60" width="150" src='../../images/logo.png' alt="ACR Development" title="ACR Development"></img>
+        </div>
+    </div>
+    <div id="content">
+        <p class="title">
+            FAQ
+        </p>
+        <div class="box-white">
+            <p class="left">
+                What is the difference between Lightning and Lightning+?
+                <p class="left-text">
+                    Lightning+ is the same as Lightning, except that it disables the 10 tab limit and allows you to use ad block. You can purchase Lightning+ on the <a href="https://play.google.com/store/apps/details?id=acr.browser.lightning">Play Store</a> or if you can't or don't want to do that, you can download the latest APK for free from <a href="https://f-droid.org/repository/browse/?fdfilter=lightning&fdid=acr.browser.lightning">F-Droid</a>.
+                </p>
+            </p>
+            <p class="left">
+                Why is my search bar colored on different websites?
+                <p class="left-text">
+                    This is a feature called color mode. It takes the favicon of the website and tries to guess a color that would match the website. Sometimes it's wrong. If you want to turn it off go to General Settings and change the "Color Mode" setting.
+                </p>
+            </p>
+            <p class="left">
+                Can I change the way tabs are displayed?
+                <p class="left-text">
+                    Yes, tabs can be shown either in sliding navigation drawer (default on phones), or they can be shown like they are on a desktop browser in a tray at the top of the screen (default on tablets). If you want to change it, then go to General Settings and change the "Show tabs in Navigation Drawer" option to your desired setting.
+                </p>
+            </p>
+            <p class="left">
+                How do I exit the browser or close all tabs?
+                <p class="left-text">
+                    The easist way is to long-press on the back button. This brings up a menu that allows you to close the current tab, or all the tabs, or all the other tabs. Also, if you're using the tab drawer UI option, the three line icon in the top left hand corner of the tab drawer will show the same menu when clicked.
+                </p>
+            </p>
+            <p class="left">
+                Why is Adobe Flash grayed out in my settings?
+                <p class="left-text">
+                    Adobe dropped support for flash a few years ago on Android, and consequently Android dropped support for the flash plugin. If you are on a version below Android 4.4 (Jelly Bean and ICS) then you can use Flash, you will need to install the Flash APK. If you are on Kitkat or above you cannot use Flash. Sorry :(
+                </p>
+            </p>
+            <p class="left">
+                Why is Block Ads grayed out in my settings?
+                <p class="left-text">
+                    Block ads is a Lightning+ feature, see the first question for download links.
+                </p>
+            </p>
+            <p class="left">
+                Why am I limited to 10 tabs?
+                <p class="left-text">
+                    This is a limitation of the free version of Lightning, Lightning+ allows unlimited tabs, see the first question for download links.
+                </p>
+            </p>
+            <p class="left">
+                Can I import bookmarks from another browser?
+                <p class="left-text">
+                    Up until recently, you could import bookmarks from Chrome or the stock browser. However, Google seems to have removed the functionality so it's not guaranteed to work anymore.
+                </p>
+            </p>
+            <p class="left">
+                Why is Request 'Do Not Track' grayed out in settings?
+                <p class="left-text">
+                    Unfortunately, only Android version kitkat 4.4 and up support this feature. If you're on a lower version, it won't work because it breaks page loading.
+                </p>
+            </p>
+            <p class="left">
+                Why is Remove Identifying Headers grayed out in settings?
+                <p class="left-text">
+                    Unfortunately, only Android version kitkat 4.4 and up support this feature. If you're on a lower version, it won't work because it breaks page loading.
+                </p>
+            </p>
+            <p class="left">
+                Why is Block 3rd Party Cookies grayed out in settings?
+                <p class="left-text">
+                    This is a new feature to the WebView and is only supported on Android version Lollipop 5.0 and up.
+                </p>
+            </p>
+            <p class="left">
+                How can I allow sites like Google maps to access my location?
+                <p class="left-text">
+                    Go to Privacy Settings and enable location access, then when you navigate to the site, you will be prompted to allow the site to access your location.
+                </p>
+            </p>
+            <p class="left">
+                Why doesn't the Save your passwords setting save your passwords?
+                <p class="left-text">
+                    Google unfortunately removed this specific functionality from the rendering engine that Lightning uses. The setting also controls saving form data which means when you enter data into a form, the WebView can remember what you put in the last time... just not for passwords.
+                </p>
+            </p>
+            <p class="left">
+                Why is the keyboard covering the text box in the webpage?
+                <p class="left-text">
+                    If this is happening, you probably have the "Hide status bar" option enabled. The problem is that with that setting enabled, Android decides that the app shouldn't get a chance to resize if the keyboard shows up, and so there is no way to know when the keyboard is displayed with that setting enabled. Unfortunately, this is the way they want the option to work so there isn't anything I can do about it. If it's really bothersome, I suggest you turn the setting off and then the keyboard won't be hiding the text box.
+                </p>
+            </p>
+            <p class="left">
+                What rendering engine does Lightning use?
+                <p class="left-text">
+                    Lightning Browser uses the built int WebView renderer included on the Android platform. On newer devices this is an app that updates on your device called "Android System WebView."
+                </p>
+            </p>
+            <p class="left">
+                What's the best way to contact you?
+                <p class="left-text">
+                    I'm accessible on <a href="https://twitter.com/RestainoAnthony">Twitter</a> and very responsive there. If you must, you can email me <a href="mailto:dev@anthonycr.com">here</a>. I will try to read your email but may not respond.
+                </p>
+            </p>
+            <p class="left">
+                How often do you work on Lightning?
+                <p class="left-text">
+                    I try to work on it weekly, but it's a side project and with a full-time job I can't spend hours a day on it so updates aren't as quick as you might hope. But know that I'm putting a lot of effort in! If you're in doubt that I'm working on it, check out my <a href="https://github.com/anthonycr">Github account</a> and look at the contributions to see what work I've recently done.
+                </p>
+            </p>
+            <p class="left">
+                What open source license does Lightning use?
+                <p class="left-text">
+                    Lightning uses the Mozilla Public License v2.0. The source code is available on Github <a href="https://github.com/anthonycr/Lightning-Browser">here</a>.
+                </p>
+            </p>
+            <p class="left">
+                Who are you?
+                <p class="left-text">
+                    I'm a
+                    <script type="text/javascript">
+                        var date1 = new Date();
+                        var date2 = new Date("05/01/1993");
+                        var timeDiff = Math.abs(date2.getTime() - date1.getTime());
+                        var diffYears = Math.floor(timeDiff / (1000 * 3600 * 24 * 365));
+                        document.write(diffYears);
+
+                    </script>
+                    year old software developer. I have a bachelors degree in electrical engineering from RPI. I live in Brooklyn. I love Android and currently work at IAC on B2B Android apps. See the <a href="http://acrdevelopment.org">main page</a> for more info about me.
+                </p>
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>
